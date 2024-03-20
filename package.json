@@ -13,6 +13,7 @@
     "react": "^18.2.0",
     "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18.2.0",
+    "react-sliders": "^0.8.2",
     "yarn": "^1.22.22"
   },
   "devDependencies": {
