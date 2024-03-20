@@ -323,6 +323,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@react-native-community/slider@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.npmjs.org/@react-native-community/slider/-/slider-4.5.0.tgz"
+  integrity sha512-pyUvNTvu5IfCI5abzqRfO/dd3A009RC66RXZE6t0gyOwI/j0QDlq9VZRv3rjkpuIvNTnsYj+m5BHlh0DkSYUyA==
+
 "@rollup/rollup-win32-x64-msvc@4.13.0":
   version "4.13.0"
   resolved "https://registry.npmjs.org/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.13.0.tgz"
@@ -1746,19 +1751,7 @@ react-refresh@^0.14.0:
   resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.14.0.tgz"
   integrity sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==
 
-react-slider@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.npmjs.org/react-slider/-/react-slider-2.0.6.tgz"
-  integrity sha512-gJxG1HwmuMTJ+oWIRCmVWvgwotNCbByTwRkFZC6U4MBsHqJBmxwbYRJUmxy4Tke1ef8r9jfXjgkmY/uHOCEvbA==
-  dependencies:
-    prop-types "^15.8.1"
-
-react-sliders@^0.8.2:
-  version "0.8.2"
-  resolved "https://registry.npmjs.org/react-sliders/-/react-sliders-0.8.2.tgz"
-  integrity sha512-SrtNQpghH3TsFCP16cnqhZ2vplVv2OVC9SAuI7a3zr8YI9oyySVe+ixa00+1oez+vIvW7z5joKJCXNOHxn7gWg==
-
-"react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16 || ^17 || ^18", react@^18.2.0, react@>=0.14:
+"react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==

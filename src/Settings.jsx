@@ -1,8 +1,9 @@
+
 function Settings() {
   return (
     <div style={{ textAlign: "left" }}>
-      <label>working minutes</label>
-      <label>break minutes</label>
+      <label>working minutes:</label>
+      <label>break minutes:</label>
     </div>
   );
 }
