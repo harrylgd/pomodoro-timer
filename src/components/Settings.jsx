@@ -1,6 +1,8 @@
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
-import { useContext } from 'react';
+import {useContext} from 'react';
+import './Slider.css'
+import SettingsContext from './SettingsContext';
 
 function Settings() {
 

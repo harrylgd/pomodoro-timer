@@ -10,13 +10,14 @@ function App() {
   return( 
   <main>
     <SettingsContext.Provider value = {{
-      workminutes: 45,
-      breakminutes: 15,
+      workMinutes: 45,
+      breakMinutes: 15,
     }}>
     {showSettings ? <Settings /> : <Timer />}
     </SettingsContext.Provider>
 
-    </main>);
+    </main>
+    );
 }
 
 export default App;
