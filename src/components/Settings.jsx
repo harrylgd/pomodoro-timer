@@ -15,6 +15,7 @@ function Settings() {
       <Slider 
         className='slider'
         value={settingsInfo.workMinutes}
+        onChange={newValue => settingsInfo.setWorkMinutes(newValue)}
         max={120}
         min={1}
       />
@@ -23,6 +24,7 @@ function Settings() {
       <Slider 
         className='slider'
         value={settingsInfo.breakMinutes}
+        onChange={newValue => settingsInfo.setBreakMinutes(newValue)}
         max={120}
         min={1}
       />
