@@ -3,15 +3,44 @@ import "react-circular-progressbar/dist/styles.css";
 import PlayButton from "./PlayButton";
 import PauseButton from "./PauseButton";
 import SettingButton from "./SettingButton";
-import { useContext, useState, useEffect } from "react";
+import { useContext, useState, useEffect, useRef } from "react";
 import SettingsContext from "./SettingsContext";
 
 function Timer() {
-  const settingsInfo = useContext(SettingsContext)
+  const settingsInfo = useContext(SettingsContext);
 
-  const [isPaused, setIsPaused] = useState(false)
+  const [isPaused, setIsPaused] = useState(false);
+  const [mode, setMode] = useState('work');
+  const [secondLeft, setSecondLeft] = useState(0);
 
-  useEffect 
+  function switchMode() {
+    const nextMode = mode === 'work' ? 'break' : 'work';
+    setMode(nextMode);
+    setSecondsLeft(nextMode === 'work' ? settingsInfo.workMinutes * 60 : settingsInfo.breakMinutes * 60);
+  }
+
+  function tick() {
+    secondLeft(secondLeft - 1);
+  }
+
+  function initTimer() {
+    setSecondLeft(settingsInfo.workMinutes * 60);
+  }
+
+  useEffect(() => {
+    initTimer();
+
+    setInterval(() => {
+      if (isPaused) {
+        return; 
+    }
+      if (secondsLeft === 0) {
+        return switchMode();
+      } 
+
+      tick();
+  }, 1000);
+  }, [settingsInfo]);
   
 
   
